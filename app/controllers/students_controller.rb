@@ -14,6 +14,6 @@ class StudentsController < ApplicationController
       @student.activate
       @student.save
       # redirect_to student_path(@student)
-      redirect_to action 'students#show', id: @student.id
+      redirect_to action: 'students#show', id: @student.id
     end
 end
